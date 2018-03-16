@@ -18,7 +18,7 @@ public class CameraController : MonoBehaviour {
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && GlobalValues.cameraControlling)
         {
             mouseOrigin = Input.mousePosition;
             moveCheck = mouseOrigin;
@@ -26,7 +26,6 @@ public class CameraController : MonoBehaviour {
             isRotating = true;
 
         }
-
         if (!Input.GetMouseButton(0))
         {
             isRotating = false;

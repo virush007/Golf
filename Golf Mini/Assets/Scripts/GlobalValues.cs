@@ -5,12 +5,12 @@ using UnityEngine;
 public class GlobalValues : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+
+    public static bool gameStart;
+    public static bool powerDisplay;
+    public static bool hit;
+    public static bool cameraControlling;
+    public static bool isGameOver;
+
 }
